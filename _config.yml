@@ -1,10 +1,11 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: To Make it Count
+author: Jooyoung Jang
+email: jy84570@gmail.com 
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Good afternoon Good evening and Good night
+  Under graduate student at Handong Global University(HGU)_18
+  Developer who pursuits happiness :)
+
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,13 +13,13 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: John Jooyoung Jang
+  tagline: Developer, Student
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
   dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  portfolio_image: "assets/portfolio.jpeg" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
     #- home
@@ -26,19 +27,21 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    #twitter: samarsault
+    instagram: zzang.joo_
+    github:  0neand0nly
+    email: jy84570@gmail.com
+    #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
-    #instagram: jekyll
+    
     #pinterest: jekyll
     #youtube: jekyll
     #facebook: jekyll
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    #email: jekyll
+    
 
     # Mastodon instances
     # mastodon:
@@ -53,7 +56,7 @@ plainwhite:
 # - about.md
 
 # Build settings
-theme: plainwhite
+#theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
