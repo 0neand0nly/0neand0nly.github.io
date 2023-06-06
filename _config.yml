@@ -1,49 +1,63 @@
-title: Make it Count - JooyoungJang
-email: jy84570@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: To Make it Count
+author: Jooyoung Jang
+email: jy84570@gmail.com 
+description: > # this means to ignore newlines until "show_exerpts:"
+  Good afternoon Good evening and Good night
+  Under graduate student at Handong Global University(HGU)_18
+  Developer who pursuits happiness :)
 
-# Author settings
-author: Adam Neilson # add your name
-author-pic: adam-face.jpg
-about-author: My name is Adam Neilson. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 2 years.
+show_excerpts: true # set to true to show excerpts on the homepage
 
-# Contact links
-email: jy84570@gmail.com # Add your Email address
-phone: +82 10-9577-8457 # Add your Phone number
-website: 0neand0nly.github.io # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-github: 0neand0nly # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
-facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: John Jooyoung Jang
+  tagline: Developer, Student
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/portfolio.jpeg" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  social_links:
+    #twitter: samarsault
+    instagram: zzang.joo_
+    github:  0neand0nly
+    email: jy84570@gmail.com
+    #linkedIn: in/samarsault
+    #dribbble: jekyll
+    #flickr:   jekyll
+    
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #telegram: jekyll
+    #gitlab: jekyll
+    
 
-# Newsletter
-mailchimp: # Add your MailChimp form identifier.
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-# Disqus
-discus_identifier: mr-brown # Add your discus identifier
-
-# Tracker
-analytics: # Google Analytics
-
-# Paginate
-paginate: 6
-paginate_path: /page:num/
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-markdown: kramdown
+theme: plainwhite
 
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
-  - jekyll-sitemap
-
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+  - jekyll-seo-tag
+#  - jekyll-feed
