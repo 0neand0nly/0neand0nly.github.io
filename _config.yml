@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: DevLog
-email: seongbin10209@gmail.com
-author: Seongbin Kim
+title: To Make Each Day Count
+email: jy84570@gmail.com
+author: Jooyoung Jang
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -48,7 +48,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://0neand0nly.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://0neand0nly.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -154,10 +154,10 @@ yat:
 #   - about.md
 
 # Page default value
- defaults:
-   home:
-     heading: "To make each day count"
-     subheading: "Developer who pursuits happiness"
+defaults:
+  home:
+    heading: "To Make Each Day Count"
+    subheading: "Boy who pursuits Happiness"
     # banner: "\assets\images\banners\home.jpg"
 
 # Banner default settings
