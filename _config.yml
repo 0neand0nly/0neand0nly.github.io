@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: To Make it Count
-email: jy84570@gmail.com
-author: Jooyoung Jang
+title: DevLog
+email: seongbin10209@gmail.com
+author: Seongbin Kim
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -158,7 +158,7 @@ yat:
    home:
      heading: "To make each day count"
      subheading: "Developer who pursuits happiness"
-     banner: "\assets\images\banners\home.jpg"
+    # banner: "\assets\images\banners\home.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
