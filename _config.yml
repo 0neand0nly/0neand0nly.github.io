@@ -69,7 +69,7 @@ yat:
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
- sitemap: true
+#sitemap: true
 
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
@@ -158,7 +158,7 @@ yat:
    home:
      heading: "To make each day count"
      subheading: "Developer who pursuits happiness"
-     banner: "\assets\images\banners\background.jpg"
+     banner: "\assets\images\banners\home.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
