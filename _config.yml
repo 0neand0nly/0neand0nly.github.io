@@ -26,7 +26,7 @@
 
 title: To Make it Count
 email: jy84570@gmail.com
-author: JooyoungJang
+author: Jooyoung Jang
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -48,7 +48,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://0neand0nly.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -69,7 +69,7 @@ yat:
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: true
+ sitemap: true
 
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
@@ -154,11 +154,11 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+ defaults:
+   home:
+     heading: "To make each day count"
+     subheading: "Developer who pursuits happiness"
+     banner: "\assets\images\banners\background.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
