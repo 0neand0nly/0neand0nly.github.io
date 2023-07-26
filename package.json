@@ -2,4 +2,13 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
+
+  "scripts": {
+    "build": "webpack --mode production",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d dist"
+  }
+  
 }
+
+
