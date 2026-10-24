@@ -1,110 +1,63 @@
----
-layout: about
-title: Who Am I
----
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="0neand0nly의 짧은 소개와 포트폴리오입니다." />
+    <title>J_Log — 소개</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body class="about-page">
+    <header class="site-header">
+      <a class="logo" href="./">J_Log<span>.</span></a>
+      <nav aria-label="주 메뉴">
+        <a href="index.html">기록</a>
+        <a href="about.html" aria-current="page">소개</a>
+        <a href="https://github.com/0neand0nly">GitHub ↗</a>
+      </nav>
+    </header>
 
-<head>
-    <style>
-        .no_dot
-        {
-            list-style: none;
-        }
-        .box {
-        width:50%;
-        height:100%; 
-        border-radius: 80%;
-        overflow: hidden;
-        }
-        .profile {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        hr {
-            height: 5px;
-            background-color: black;
-        }
-        .icons{
-            margin-right: 10x;
-            padding-right: 10px;
-        }
-        .bold{
-            font-weight: bold;
-        }
-        .quotes{
-            font-size: 12pt;
-        }
-    </style>
-</head>
+    <main class="about-main">
+      <section class="profile-hero" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">ABOUT ME · 0NEAND0NLY</p>
+          <h1 id="about-title">To Make<br /><span>it Count</span></h1>
+          <p class="profile-intro">하루하루를 낭비하지 않고 기록하기 위해 시작했습니다.<br />배우고, 직접 만들고, 더 나은 선택을 쌓아가는 사람입니다.</p>
+          <div class="profile-links"><a class="button" href="https://github.com/0neand0nly">GitHub 보기 ↗</a><a href="https://blog.naver.com/jy84570">네이버 블로그 ↗</a></div>
+        </div>
+        <div class="portrait" aria-label="프로필 사진 영역">
+          <span class="portrait-fallback" aria-hidden="true">J</span>
+          <img src="assets/profile.jpg" alt="0neand0nly 프로필 사진" onerror="this.remove()" />
+          <p>PROFILE<br /><small>assets/profile.jpg</small></p>
+        </div>
+      </section>
 
+      <section class="about-section identity" aria-labelledby="identity-title">
+        <p class="eyebrow">01 / WHO I AM</p>
+        <div class="about-grid"><h2 id="identity-title">기록을 통해<br />성장합니다.</h2><div><p>새로운 기술을 익히고, 궁금한 것을 직접 구현하며, 그 과정을 나만의 언어로 남깁니다. 이곳은 블로그이면서 동시에 개인 프로젝트를 쌓아가는 작업 공간입니다.</p><p>작은 기능 하나라도 왜 만들었는지, 어떻게 동작하는지 이해하며 완성하는 방식을 좋아합니다.</p></div></div>
+      </section>
 
-<h2>Who Am I</h2>
-<hr>
-<br>
-<p>
-    <div class="box">
-    <img class="profile" src="/assets/images/profiles/prof.jpeg" alt="prof_pic" title="Profile Picture">
-    <div style="clear: both;"></div>
-    </div>
-</p>
+      <section class="about-section" aria-labelledby="journey-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / JOURNEY</p><h2 id="journey-title">경험과 배움</h2></div><span>초안 · 내용을 채워가요</span></div>
+        <div class="timeline">
+          <article><span>NOW</span><div><h3>J_Log 개인 프로젝트</h3><p>개인 블로그, 포트폴리오, 투자 관리 도구를 직접 설계하고 개발하고 있습니다.</p></div></article>
+          <article><span>EDUCATION</span><div><h3>[대학교명] · [전공]</h3><p>입학·졸업 연도, 인상 깊었던 수업이나 활동을 이곳에 적어주세요.</p></div></article>
+          <article><span>EXPERIENCE</span><div><h3>[회사 또는 주요 경험]</h3><p>역할과 문제를 해결했던 경험을 한두 문장으로 적어주세요.</p></div></article>
+        </div>
+      </section>
 
+      <section class="about-section" aria-labelledby="skills-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / SKILLS</p><h2 id="skills-title">직접 써보고 있는 기술</h2></div><span>계속 업데이트 중</span></div>
+        <div class="skills-grid">
+          <article><span>FRONTEND</span><h3>웹 화면 만들기</h3><p>HTML · CSS · JavaScript</p></article>
+          <article><span>BACKEND</span><h3>데이터 연결하기</h3><p>Node.js · REST API · OAuth</p></article>
+          <article><span>TOOLS</span><h3>만들고 기록하기</h3><p>Git · GitHub · Playwright</p></article>
+        </div>
+      </section>
 
-<h3 id="Jooyoung-Jang">John Jooyoung Jang</h3>
-<p class="quotes">Good Afternoon, Good Evening and Good Night!</p>
-<h3 id="information">Personal Links</h3>
-<ul class='no_dot'>
-    <li class="icons">
-        <a href="https://github.com/0neand0nly">
-            <img src="/assets/images/profiles/github.png"alt="github_logo" title="github_logo" style="float:left; width:30px; height:30px" >
-        </a>
-    </li>
-    <li class="icons">
-        <a href="https://blog.naver.com/jy84570">
-            <img src="/assets/images/profiles/naver_blog.png"alt="naver_logo" title="naver_logo" style="float:left; width:30px; height:30px" >
-        </a>
-    </li>
-   
-    <li class="icons">
-        <a href="https://www.instagram.com/zzang.joo_">
-            <img src="/assets/images/profiles/insta.png"alt="insta_logo" title="insta_logo" style="float:left; width:30px; height:30px" >
-        </a>
-    </li>
-</ul>
-<br>
-
-
-
-
-<h3 id="interest">Interest</h3>
-<ul class="bold">
-  <li>Software Engineering</li>
-  <li>Software Safety</li>
-  <li>Software Testing</li>
-  <li>Web managment</li>
-</ul>
-
-
-<h3 id="education">Education</h3>
-<ul>
-  <li>2018 ~ 2024 <a href="https://www.handong.edu/">Handong Global University</a>, Korea - Bachelor of <a href="https://csee.handong.edu/">Engineering in Computer Science*B*</a></li>
-</ul>
-
-<h3 id="publications">Publications</h3>
-<ul>
-    <li>Daeseok Kim, Jooyoung Jang, Jaeho Bae, Jaechang Nam, Survey on Security Vulnerability Detection Techniques based on Bytecode Analysis, in Proceedings of Korea Conference on Software Engineering (KCSE2023), Korea, Feb 8 - 10, 2023 <span class="bold">Outstanding undergrad paper</span> <a href="/assets/resources/kcse_paper.pdf">[pdf]</a></li>
-</ul>
-
-<h3 id="timeline">Timeline</h3>
-<ul>
-  <li>2023.08 ~ 2023.12 : Introduction to Programming TA</a></li>
-  <li>2023.06 ~ 2023.12 : 캡스톤 프로젝트: Bytecode Pre-trained 모델 기반 보안 취약점 자동 수정 기법 진행 </li>
-  <li>2023.03 ~ 2023.06 : Introduction to Programming TA</a></li>
-  <li>2023.03 ~ 2023.06 : 공학프로젝트 기획: Bytecode Pre-trained 모델 기반 보안 취약점 자동 수정 기법 진행 <a href="/assets/resources/gongposter.pdf">[Link]</a></li>
-  <li>2023.02           - <a href="http://sigsoft.or.kr/kcse2023/">KCSE 2023</a> Out Standing Undergrad Paper</li>
-  <li>2022.12 ~         : <a href="https://isel.handong.edu/">ISEL</a>: Intelligent Software Engineering Lab member</li>
-  <li>2022.09 ~ 2022.12 : Introduction to Programming TA</a></li>
-  <li>2022.02 ~ 2022.08 : Exchange Student @ Poland</li>
-  <li>2021.12 ~ 2022.02 : Spring TeamPik project <a href="/assets/resources/spring_camp.pdf">[Link]</a></li>
-  <li>2021.09 ~ 2021.12 : Introduction to Programming TA</a></li>
-  <li>2018.03           - <a href="https://www.handong.edu/">Handong Global University</a> 입학</li>
-</ul>
+      <section class="about-contact" aria-labelledby="contact-title"><div><p class="eyebrow">LET'S CONNECT</p><h2 id="contact-title">기록은 계속됩니다.</h2></div><div><a href="https://github.com/0neand0nly">GitHub <span>↗</span></a><a href="https://blog.naver.com/jy84570">네이버 블로그 <span>↗</span></a></div></section>
+    </main>
+    <footer><span>© 2026 0neand0nly</span><span>하나씩, 직접 만들어가는 중.</span></footer>
+  </body>
+</html>

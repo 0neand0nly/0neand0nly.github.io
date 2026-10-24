@@ -1,23 +1,60 @@
----
-layout: home
-title: home
-banner: "/assets/images/banners/home.jpg"
----
-<ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
-  <li>
-    <div class="post-card">
-      <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
-      </a>
-      
-      <div class="post-card-body">
-        {% for tag in post.tags %}
-        <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
-        {% endfor %}
-        <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
-      </div>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="하루하루를 낭비하지 않고 기록하기 위해 시작한 0neand0nly의 개인 공간입니다." />
+    <title>J_Log — To Make it Count</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="manual-posts.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="./">J_Log<span>.</span></a>
+      <nav aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="#journal">기록</a>
+        <a href="#topics">관심사</a>
+        <a href="https://github.com/0neand0nly">GitHub ↗</a>
+      </nav>
+    </header>
 
-    </div>
-  </li>
-  {% endfor %}
-</ol>
+    <main>
+      <section class="hero" id="about" aria-labelledby="intro-title">
+        <p class="eyebrow">A PERSONAL SPACE · 0NEAND0NLY</p>
+        <h1 id="intro-title">To Make<br /><span>it Count</span></h1>
+        <p class="intro">하루하루를 낭비하지 않고 기록하기 위해 시작합니다.<br />배우고, 경험하고, 만들어가는 순간들을 이곳에 남깁니다.</p>
+        <a class="button" href="#journal">쌓아온 기록 읽기 <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="status-dot" aria-hidden="true"></span> 일상과 여행, 그리고 배움의 순간들</div>
+      </section>
+
+      <section class="journal" id="journal" aria-labelledby="journal-title">
+        <p class="eyebrow">LIFE IN WORDS</p>
+        <div class="section-heading"><h2 id="journal-title">지나온 날들의 기록</h2><a href="https://blog.naver.com/jy84570">네이버 블로그 ↗</a></div>
+        <p class="section-intro">폴란드에서의 하루부터 여행과 일상의 회고까지.<br />네이버에 남긴 이야기들을 이곳에서도 만나보세요.</p>
+        <div class="filters" role="group" aria-label="글 분류">
+          <button type="button" data-filter="all" aria-pressed="true">전체</button>
+          <button type="button" data-filter="travel" aria-pressed="false">여행·교환학생</button>
+          <button type="button" data-filter="daily" aria-pressed="false">일상·회고</button>
+        </div>
+        <div class="feed-toolbar"><p id="feed-status" role="status">기록을 불러오는 중입니다.</p><button type="button" id="retry-feed" hidden>다시 불러오기</button></div>
+        <div id="post-list" class="post-list" aria-busy="true"></div>
+        <button type="button" id="more-posts" class="more-button" hidden>기록 더 보기</button>
+        <noscript><p>글 목록을 보려면 JavaScript를 켜거나 <a href="https://blog.naver.com/jy84570">네이버 블로그</a>를 방문해주세요.</p></noscript>
+      </section>
+
+      <section class="topics" id="topics" aria-labelledby="topics-title">
+        <div class="section-heading"><h2 id="topics-title">이 공간에 쌓아갈 것들</h2><span>01 — 03</span></div>
+        <div class="card-grid">
+          <article class="card"><span class="card-number">01 / LEARNING</span><h3>개발 기록</h3><p>처음 만나는 웹 기술부터 직접 해결한 문제까지. 배운 내용을 제 언어로 정리합니다.</p><span class="tag">HTML · CSS · JavaScript</span></article>
+          <article class="card"><span class="card-number">02 / BUILDING</span><h3>프로젝트</h3><p>아이디어를 작동하는 결과물로. 만드는 과정과 선택의 이유를 함께 담습니다.</p><span class="tag">포트폴리오 준비 중</span></article>
+          <article class="card"><span class="card-number">03 / INVESTING</span><h3>투자 기록</h3><p>투자에 대한 생각을 기록하고, 앞으로 개인 포트폴리오 관리 도구도 만들어갑니다.</p><span class="tag">앞으로 만들어갈 기능</span></article>
+        </div>
+      </section>
+
+      <section class="connection" aria-labelledby="connection-title"><div><p class="eyebrow">ELSEWHERE</p><h2 id="connection-title">다른 곳에서도 만나요.</h2></div><div class="connection-links"><a href="https://github.com/0neand0nly">GitHub <span aria-hidden="true">↗</span></a><a href="https://blog.naver.com/jy84570">네이버 블로그 <span aria-hidden="true">↗</span></a><a href="https://0neand0nly.github.io/">이전 블로그 <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer><span>© <span id="year">2026</span> 0neand0nly</span><span>하나씩, 직접 만들어가는 중.</span></footer>
+  </body>
+</html>
